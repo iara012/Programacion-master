@@ -1,0 +1,73 @@
+/*.principal{
+    display: flex;
+    justify-content: center;
+}
+.contenido2{
+    position: relative;
+    z-index: 2;
+
+    background: rgba(255,255,255,0.7);
+     width: 500px;
+    padding: 100px;
+
+    margin: auto;
+    top: 100px;
+    border-radius: 10px;
+}
+
+.contTitulo {
+    text-align: center;
+}
+
+.letras{
+    width: 500px;
+    
+}*/
+
+/* Fondo de la página */
+body {
+    background-color: #f8f4f8;
+}
+
+/* Contenedor principal */
+.principal {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Título */
+.contTitulo h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #5c3d5b;
+    margin-bottom: 10px;
+}
+
+/* Eslogan */
+.contTitulo .blockquote {
+    text-align: center;
+    font-size: 22px;
+    color: #7a5d7b;
+}
+
+/* Texto descriptivo */
+.letras {
+    width: 70%;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Carrusel */
+#carouselExampleAutoplaying {
+    width: 60%;
+    margin: 40px auto;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: 400px;
+    object-fit: cover;
+    margin: auto;
+}

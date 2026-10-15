@@ -1,0 +1,21 @@
+#buscador{
+    background-color: rgb(168, 154, 221);
+    width: 300px;
+}
+.boton{
+    background-color: rgb(255, 255, 255);
+    
+}
+.d-flex{
+    margin-left: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iconos{
+    margin-left: auto;
+    display: flex;
+    gap: 25px;
+    font-size: 25px;
+}

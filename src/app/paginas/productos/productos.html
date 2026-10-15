@@ -1,0 +1,38 @@
+<div class="cuerpoCarta">
+
+  @for (p of Productos; track p.id) {
+
+    @if (p.disponibilidad) {
+
+      <div class="cardProducto">
+
+        <!-- favoritos (corazon)-->
+        <button class="btnFav" type="button" (click)="agregarAFavoritos(p)">
+          <i class="bi bi-heart"></i>
+        </button>
+
+        <img [src]="p.imagen" [alt]="p.nombre" class="imagen">
+
+        <div class="contenido">
+
+          <h4 class="titulo">{{ p.nombre }}</h4>
+
+          <p class="precio">$ {{ p.precio }}</p>
+
+          <p class="descripcion">
+            {{ p.descripcion }}
+          </p>
+
+          <button class="btnComprar" type="button" (click)="agregarAlCarrito(p)">
+            Agregar al carrito
+          </button>
+
+        </div>
+
+      </div>
+
+    }
+
+  }
+
+</div>

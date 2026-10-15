@@ -1,0 +1,45 @@
+<div class="contenedorFavoritos">
+
+    <h2 class="titulo">
+        ❤️ Mis Favoritos
+    </h2>
+
+    <div class="cardsFavoritos">
+
+        @for (p of productosFavoritos; track p.id) {
+
+        <div class="cardFavorito">
+
+            <img [src]="p.imagen" [alt]="p.nombre" class="imagen">
+
+            <div class="contenido">
+
+                <h3>{{ p.nombre }}</h3>
+
+                <p class="precio">$ {{ p.precio }}</p>
+
+                <p class="descripcion">
+                    {{ p.descripcion }}
+                </p>
+
+                <div class="botones">
+
+                    <button class="btnCarrito">
+                        Agregar al carrito
+                    </button>
+
+                    <button class="btnEliminar">
+                        Quitar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        }
+
+    </div>
+
+</div>

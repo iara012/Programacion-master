@@ -1,0 +1,122 @@
+.cuerpoCarta{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+    background: #f7f4fa;
+}
+
+/* TARJETA */
+.cardProducto{
+    position: relative;
+    width: 300px;              
+    min-height: 520px;         
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardProducto:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.18);
+}
+
+/* IMAGEN */
+.imagen{
+    width: 100%;
+    height: 260px;
+    object-fit: contain;      
+    background: #fff;
+    padding: 15px;
+}
+
+/* CONTENIDO */
+.contenido{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    gap: 12px;
+}
+
+.titulo{
+    font-size: 22px;
+    font-weight: 600;
+    color: #3f2d56;
+    margin: 0;
+
+    /* máximo 2 líneas */
+    min-height: 56px;
+}
+
+.precio{
+    font-size: 24px;
+    font-weight: bold;
+    color: #9c5de5;
+    margin: 0;
+}
+
+/* DESCRIPCIÓN */
+.descripcion{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+
+    /* Siempre ocupa el mismo espacio */
+    min-height: 72px;
+
+    /* Si es muy larga la corta */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* BOTÓN */
+.btnComprar{
+    margin-top: auto;
+    border: none;
+    background: #9c5de5;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.btnComprar:hover{
+    background: #7b3fd0;
+}
+
+/* FAVORITOS */
+.btnFav{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,.9);
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    transition: .3s;
+    z-index: 2;
+}
+
+.btnFav:hover{
+    transform: scale(1.15);
+    background: #ffe6f0;
+}
+

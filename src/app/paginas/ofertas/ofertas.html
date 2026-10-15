@@ -1,0 +1,26 @@
+<div class="titulo-ofertas">
+    OFERTAS
+</div>
+
+
+<div class="cardMayor">
+    @for(p of ofertas; track p.id){
+
+    <div class="card">
+        <img src="{{p.imagen}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{p.nombre}}</h5>
+            <p class="card-text">✨{{p.descripcion}}</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-body-secondary">
+                <div>
+                    <p class="precio-viejo">{{p.precio}}</p>
+                    <p class="precio-nuevo">{{p.precio - (p.precio*10/100)}}</p>
+                </div>
+                <a href="#" class="btn btn-primary">Mas info..</a>
+            </small>
+        </div>
+    </div>
+    }
+</div>
